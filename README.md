@@ -1,3 +1,3 @@
 # Sorting
 
-A description of this package.
+Various Sorting Algorithms implemented in Swift

@@ -18,6 +18,18 @@ final class SortingTests: XCTestCase {
         mergeSort(&arr)
         XCTAssertEqual(arr, [1, 2, 3, 4, 5])
     }
+    
+    func testSelectionSort() {
+        var arr = [5, 2, 7, 12, 46, 22]
+        selectionSort(&arr)
+        XCTAssertEqual(arr, [2, 5, 7, 12, 22, 46])
+    }
+    
+    func testInsertionSort() {
+        var arr = [5, 2, 7, 12, 46, 22]
+        insertionSort(&arr)
+        XCTAssertEqual(arr, [2, 5, 7, 12, 22, 46])
+    }
 
     static var allTests = [
         ("testExample", testExample),

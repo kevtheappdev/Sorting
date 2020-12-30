@@ -21,11 +21,10 @@ private func mergeSortHelp<T: Comparable>(_ arr: inout [T], l: Int, r: Int)  {
     }
 }
 
+
 func merge<T: Comparable>(_ arr: inout [T], l: Int, m: Int, r: Int) {
-    print("arr: \(arr) l: \(l) m: \(m) r:\(r)")
-    let left = Array(arr[l..<m+1])
+    let left = Array(arr[l...m])
     let right = Array(arr[m+1...r])
-    print("left: \(left) right:\(right)")
     
     var lIndex = 0
     var rIndex = 0
